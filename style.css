@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgb(61, 59, 59);
+  height: 60px;
+  padding-top: 8px;
+}
+
+.navbar a {
+  font-size: 28px;
+  color: rgb(221, 218, 208);
+  text-decoration: none;
+  margin-inline-start: 60px;
+}
+
+.navbar a:hover {
+  color: rgb(61, 59, 59);
+  background-color: rgb(221, 218, 208);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+/* Content */
+
+.div1 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.div1 img {
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.div2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.div3 {
+  text-align: center;
+  /* border: 3px solid black; */
+  overflow: auto;
+  margin-bottom: 60px;
+}
+.div3 img {
+  float: left;
+  height: 300px;
+  border-radius: 5px;
+  /* text-shadow:; */
+}
+
+.div4 {
+  /* clear: left; */
+  /* border: 5px solid black; */
+  overflow: auto;
+  text-align: center;
+}
+.div4 img {
+  float: right;
+  height: 300px;
+}
+
+/* Footer */
+.footer {
+  clear: both;
+  text-align: center;
+  height: 40px;
+  padding-top: 1px;
+  background-color: rgb(61, 59, 59);
+  color: rgb(221, 218, 208);
+}
