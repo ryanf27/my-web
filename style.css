@@ -3,11 +3,26 @@ body {
   padding: 0;
 }
 
+/* {
+  color: rgb(221, 218, 208);
+  background-color: rgb(61, 59, 59);
+} */
+/* .asdf {
+
+}
+.fixednav title {
+  position: relative;
+  left: 14px;
+} */
+
 /* Navbar */
 .navbar {
-  background-color: rgb(61, 59, 59);
   height: 60px;
   padding-top: 8px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .navbar a {
