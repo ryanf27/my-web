@@ -1,89 +1,198 @@
+/* CSS Document for the Screen */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap");
+
+/* color
+#1a1a1a dark 
+#dddddd grey
+#d9d9d9 font
+*/
 body {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #d9d9d9;
+  background-color: #dddddd;
   margin: 0;
   padding: 0;
 }
 
-/* {
-  color: rgb(221, 218, 208);
-  background-color: rgb(61, 59, 59);
-} */
-/* .asdf {
-
-}
-.fixednav title {
+#page {
   position: relative;
-  left: 14px;
-} */
+  text-align: center;
+}
 
-/* Navbar */
-.navbar {
-  height: 60px;
-  padding-top: 8px;
+/* Text */
+h1 {
+  margin: 0 0 1em 0;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+p {
+  margin: 0 0 1em 0;
+  font-size: 200;
+}
+/* ------------------- */
+/* Sidebar, Left side*/
+#sidebar {
+  height: 100%;
+  width: 20%;
   position: fixed;
+  z-index: 1;
   top: 0;
-  right: 0;
-  left: 0;
+  background-color: #1a1a1a;
+  box-sizing: border-box;
 }
 
-.navbar a {
-  font-size: 28px;
-  color: rgb(221, 218, 208);
-  text-decoration: none;
-  margin-inline-start: 60px;
+/* picture profile */
+#sidebar img {
+  height: auto;
+  max-width: 100%;
+  box-shadow: 0 5px 30px #1a1a1a;
 }
-
-.navbar a:hover {
-  color: rgb(61, 59, 59);
-  background-color: rgb(221, 218, 208);
-  border-radius: 5px;
+.image {
+  position: relative;
+}
+.image h1 {
+  position: absolute;
+  bottom: 0;
+  background-color: #1a1a1a;
+  color: #dddddd;
+  opacity: 0.6;
+  width: 100%;
+  margin: 0;
   padding: 8px;
+  box-sizing: border-box;
 }
 
-/* Content */
-
-.div1 {
-  text-align: center;
-  margin-bottom: 70px;
+/* Side Navbar */
+.side-navbar {
+  margin: 40px auto;
 }
-.div1 img {
-  margin-top: 10px;
-  border-radius: 20px;
+.nav-btn {
+  margin: 15px auto;
 }
-
-.div2 {
-  text-align: center;
-  margin-bottom: 80px;
+.side-navbar a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #d9d9d9;
 }
-.div3 {
-  text-align: center;
-  /* border: 3px solid black; */
-  overflow: auto;
-  margin-bottom: 60px;
+.side-navbar a:hover {
+  background-color: #dddddd;
+  color: #1a1a1a;
 }
-.div3 img {
-  float: left;
-  height: 300px;
-  border-radius: 5px;
-  /* text-shadow:; */
+/* .triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid #555;
+  border-bottom: 25px solid transparent;
+} */
+.side-navbar i {
+  padding: 10px 20px;
 }
-
-.div4 {
-  /* clear: left; */
-  /* border: 5px solid black; */
-  overflow: auto;
-  text-align: center;
-}
-.div4 img {
-  float: right;
-  height: 300px;
+.side-navbar span {
+  position: absolute;
+  left: 90px;
 }
 
-/* Footer */
-.footer {
-  clear: both;
+/* -------------------- */
+/* Main Page, Right Side */
+#main-page {
+  position: relative;
+  width: 70%;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  margin-left: 25%;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 1.3em;
+  box-shadow: 10px 20px 20px #1a1a1a;
+}
+
+/* about */
+#about .content {
+  padding: 10px 20px;
+}
+
+/* box skills */
+.box {
+  padding: 1.4em;
+  margin-top: 60px;
+}
+
+.box ul {
+  list-style: none;
   text-align: center;
-  height: 40px;
-  padding-top: 1px;
-  background-color: rgb(61, 59, 59);
-  color: rgb(221, 218, 208);
+}
+
+.column {
+  display: inline-block;
+  width: 33%;
+  box-sizing: border-box;
+  margin: 0;
+  vertical-align: top;
+  padding: 30px 5px;
+  border: 1px solid wheat;
+}
+
+/* --------------- */
+/* work */
+
+/* ------------------ */
+/* Price */
+#price {
+  /* padding: 10px auto; */
+}
+
+.section {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33%;
+  justify-content: space-around;
+}
+
+/* .section ul {
+  box-sizing: border-box;
+  width: 33%;
+} */
+.section li {
+  list-style: none;
+  font-size: 1.5em;
+  border: 2px groove #dddddd;
+  padding: 10px 20px;
+}
+
+.first-col {
+  background-color: #222831;
+  color: #dddddd;
+}
+
+.first-col:hover {
+  color: #222831;
+  background-color: #dddddd;
+}
+/* contact */
+#contact {
+}
+
+/* footer */
+footer {
+  height: 50px;
+  border-top: 2px groove #dddddd;
+}
+
+footer img {
+  height: 20px;
 }
