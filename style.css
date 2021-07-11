@@ -1,36 +1,37 @@
 /* CSS Document for the Screen */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
 
-/* color
-#1a1a1a dark 
-#dddddd grey
-#d9d9d9 font
-*/
 body {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  color: #d9d9d9;
-  background-color: #dddddd;
+  background-color: #17223b;
+  color: #ddd;
   margin: 0;
   padding: 0;
 }
-
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
 #page {
-  position: relative;
   text-align: center;
+  box-sizing: border-box;
 }
 
 /* Text */
 h1 {
   margin: 0 0 1em 0;
   font-size: 2.8em;
-  font-weight: 700;
+  font-weight: 500;
 }
 h2 {
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.8em 0;
   font-size: 1.6em;
-  font-weight: 500;
+  font-weight: 400;
 }
 h3 {
   margin: 0 0 0.5em 0;
@@ -39,160 +40,214 @@ h3 {
 }
 p {
   margin: 0 0 1em 0;
-  font-size: 200;
+  font-size: 100;
 }
-/* ------------------- */
-/* Sidebar, Left side*/
-#sidebar {
-  height: 100%;
-  width: 20%;
+
+/* -------- */
+/* Navbar */
+nav {
   position: fixed;
-  z-index: 1;
+  background-color: transparent;
   top: 0;
-  background-color: #1a1a1a;
-  box-sizing: border-box;
-}
-
-/* picture profile */
-#sidebar img {
-  height: auto;
-  max-width: 100%;
-  box-shadow: 0 5px 30px #1a1a1a;
-}
-.image {
-  position: relative;
-}
-.image h1 {
-  position: absolute;
-  bottom: 0;
-  background-color: #1a1a1a;
-  color: #dddddd;
-  opacity: 0.6;
+  z-index: 1;
   width: 100%;
-  margin: 0;
-  padding: 8px;
-  box-sizing: border-box;
+  float: right;
+  text-align: right;
 }
-
-/* Side Navbar */
-.side-navbar {
-  margin: 40px auto;
+nav::after {
+  content: "";
+  clear: right;
 }
-.nav-btn {
-  margin: 15px auto;
-}
-.side-navbar a {
-  display: block;
-  text-align: left;
-  text-decoration: none;
-  font-size: 1.8em;
-  color: #d9d9d9;
-}
-.side-navbar a:hover {
-  background-color: #dddddd;
-  color: #1a1a1a;
-}
-/* .triangle-right {
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-left: 50px solid #555;
-  border-bottom: 25px solid transparent;
-} */
-.side-navbar i {
-  padding: 10px 20px;
-}
-.side-navbar span {
-  position: absolute;
-  left: 90px;
-}
-
-/* -------------------- */
-/* Main Page, Right Side */
-#main-page {
-  position: relative;
-  width: 70%;
-  box-sizing: border-box;
-  background-color: #1a1a1a;
-  margin-left: 25%;
-  text-align: left;
-  padding: 15px 20px;
-  font-size: 1.3em;
-  box-shadow: 10px 20px 20px #1a1a1a;
-}
-
-/* about */
-#about .content {
-  padding: 10px 20px;
-}
-
-/* box skills */
-.box {
-  padding: 1.4em;
-  margin-top: 60px;
-}
-
-.box ul {
-  list-style: none;
-  text-align: center;
-}
-
-.column {
+nav a {
   display: inline-block;
-  width: 33%;
-  box-sizing: border-box;
-  margin: 0;
-  vertical-align: top;
-  padding: 30px 5px;
-  border: 1px solid wheat;
+  color: #ddd;
+  padding: 14px;
+  font-size: 1.1em;
+}
+nav a:hover {
+  background-color: #17223b;
+  color: #ddd;
+}
+/* header */
+header img {
+  width: 100%;
+  height: auto;
+  opacity: 0.85;
+}
+.wallpaper {
+  position: relative;
+}
+.content {
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(53, 86, 117, 0.267);
+  color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-/* --------------- */
-/* work */
+/* --------- */
+/* About */
+#about {
+  padding: 200px 0;
+  line-height: 1.8em;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+}
+#about img {
+  max-width: 30%;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 5px 5px 21px 1px rgba(0, 0, 0, 0.68);
+}
+.text {
+  width: 50%;
+}
 
-/* ------------------ */
+/* -------- */
+/* Skill */
+#skills {
+  padding: 100px 0;
+  background-color: #6b778d;
+  color: #ddd;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.section {
+  background-color: #17223b;
+  width: 25%;
+  margin: 0 10px;
+  padding: 20px 15px;
+  border: 1px groove #263859;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.section img {
+  width: 50%;
+}
+.section ul {
+  line-height: 1.9em;
+  font-weight: 300;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+
+.section:hover {
+  box-shadow: 5px 5px 21px 1px rgba(0, 0, 0, 0.68);
+}
+
+/* --------- */
 /* Price */
 #price {
-  /* padding: 10px auto; */
+  padding: 100px 0;
+  color: #ddd;
 }
-
-.section {
-  display: inline-block;
+.price-container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: 30%;
+  margin: 0 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #5c677d;
   box-sizing: border-box;
-  width: 33%;
-  justify-content: space-around;
+  overflow: auto;
+}
+.card ul {
+  line-height: 2em;
+  font-size: 1.2em;
+}
+.card li {
+  border-bottom: 1px solid #333;
+  padding: 6px 0;
+}
+.card h1 {
+  background-color: #263859;
+  color: #d1d1d1;
+  margin-bottom: 0;
+}
+.num {
+  background-color: #263859;
+  color: #d1d1d1;
+}
+.card button {
+  background-color: #263859;
+  color: #ddd;
+  padding: 6px;
+  font-size: 0.9em;
 }
 
-/* .section ul {
-  box-sizing: border-box;
-  width: 33%;
-} */
-.section li {
-  list-style: none;
-  font-size: 1.5em;
-  border: 2px groove #dddddd;
-  padding: 10px 20px;
-}
-
-.first-col {
-  background-color: #222831;
-  color: #dddddd;
-}
-
-.first-col:hover {
-  color: #222831;
-  background-color: #dddddd;
-}
-/* contact */
+/* ----- */
+/* Contact */
 #contact {
+  padding: 200px 0;
+  background-color: #6b778d;
+  display: flex;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+input[type="submit"] {
+  background-color: #333;
+  color: #d1d1d1;
+  margin: 10px auto;
+  padding: 4px;
+  width: 80%;
+  font-size: 1.3em;
+}
+textarea {
+  height: 200px;
 }
 
-/* footer */
+/* ----- */
+/* Footer */
 footer {
-  height: 50px;
-  border-top: 2px groove #dddddd;
+  padding: 200px 0;
+  color: #d1d1d1;
 }
 
-footer img {
-  height: 20px;
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social a {
+  margin: 0 4px;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  /* Navbar */
+  nav a {
+    display: block;
+  }
+
+  .content {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 20%;
+    font-size: 0.8em;
+  }
 }
